@@ -61,6 +61,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return viewModel?.numberOfSection() ?? 0
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.numberOfRows(in: section) ?? 0
     }
