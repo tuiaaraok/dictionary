@@ -52,7 +52,6 @@ class ViewController: UIViewController {
     }
 }
 
-
 // MARK: - UITableViewDataSource, UITableViewDelegate
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -60,7 +59,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel?.numberOfSection() ?? 0
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.numberOfRows(in: section) ?? 0
